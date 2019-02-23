@@ -1,0 +1,139 @@
+/* Reset de propriedades */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: gray;
+    font-family: 'Open sans', sans-serif;
+    /* Mobile First - CSS do mobile */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 10%;
+    background-color: black;
+    color: white;
+}
+header nav a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+   
+}
+header nav a:hover{
+    background-color: orangered;
+    border-radius: 3px;
+}
+header i{
+    color: white;
+    font-size: 2rem;
+}
+header {
+  display: flex;
+  padding: 5px 5px 0  5px;
+  justify-content: space-between;
+ 
+}
+header img{
+    height: 55px;
+    margin-right: calc(50% - (97px/2));
+}
+main{
+    padding: 15px 10px 0 10px;
+}
+#sessao-principal{
+    padding: 0 0 15px 0;
+    border-bottom: 2px dotted grey;
+}
+article{
+    font-size: 0.8rem;
+}
+#sessao-principal figure{
+    display: flex;
+    justify-content: center;
+}
+#sessao-principal figure img{
+    height: 150px;
+    margin-left: -20px;
+}
+#sessao-principal article h1 {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: orangered;
+}
+#sessao-principal article p{
+    width: 90%;
+    margin-top: 10px;
+  
+}
+#sessao-principal article a{
+    display: inline-block;
+    margin-top: 15px; 
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+/*SESSÃO PRODUTO*/
+#produtos{
+    margin: 15px;
+}
+#produtos article{
+    /* padding: 10px; */
+    border: 1px solid grey;
+}
+#produtos article h2{
+    font-size: 0.8rem;
+    /* para estudo line height - gerando padding top e bottom */
+    /* line-height: 2rem; */
+    text-transform: uppercase;
+    background-color: orangered;
+    color: white;
+    padding-left: 10px;
+}
+#produtos article img{
+    float: left;
+    margin: 10px; 
+}
+#produtos article p{
+    line-height: 0.9rem;
+    padding: 10px;
+}
+/* footer */
+footer{
+    margin-top: 25px;
+    padding-left: 5px;
+    background-color: black;
+}
+footer p{
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+footer img{
+    /* float: left; */
+    width: 30px;
+    margin-top: -20px;
+}
+@media screen and (min-width: 768px){
+
+}
