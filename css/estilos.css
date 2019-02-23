@@ -16,28 +16,9 @@ header{
     position: relative;
     background-color: black;
 }
-header nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 0 10%;
-    background-color: black;
-    color: white;
-}
-header nav a {
-    width: 100%;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-   
-}
-header nav a:hover{
-    background-color: orangered;
-    border-radius: 3px;
-}
+
+
+
 header i{
     color: white;
     font-size: 2rem;
@@ -51,6 +32,32 @@ header {
 header img{
     height: 55px;
     margin-right: calc(50% - (97px/2));
+}
+header input{
+     display: none;
+}
+header input:checked ~ nav{
+    display: flex;
+}
+header nav{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 10% 5px 10%;
+    background-color: black;
+}
+header nav a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;  
+}
+header nav a:hover{
+    background-color: orangered;
+    border-radius: 3px;
 }
 main{
     padding: 15px 10px 0 10px;
